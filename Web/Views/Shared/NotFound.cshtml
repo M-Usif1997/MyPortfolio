@@ -1,0 +1,13 @@
+﻿
+@{ Layout = null; }
+@{ ViewBag.title = "Error Happen"; }
+
+<link href="~/css/freelancer.css" rel="stylesheet">
+
+<h1>@ViewBag.ErrorMessage</h1>
+
+<a asp-controller="Account" asp-action="Login" class="btn btn-outline-success" style="width:auto">
+
+    Click Here to login To Your Portfolio
+
+</a>

@@ -1,0 +1,31 @@
+
+    
+1- Contact Us according to Profile he showed by username he entered in Url *Not Done *   (Cannot send from any account must be authenticated first to avoid emailsSpam can send but without email of person who send)
+
+2 - Show Services that Porfolio of specific person Doing it 
+3 - User Can Update in his Data  like: (Name ,Phone number, Job Description , City , Profile Picture )  Make in settings of Account
+
+4 - allow text in ContactUS & AboutUS editable by the authenticated User only
+5 - contact Details Field With About and Can Download CV  => Take from Authenticated User
+6 - Education Field  => Take from Authenticated User
+7 - Skills Field   => Take from Authenticated User
+
+
+
+
+Edit in layout
+----------------
+
+put stars in Required Field to inform user as Wix and and all sites
+
+
+Refactoring Code:
+-----------------
+. Make ViewModels in PortfolioItem Controller
+. Make Repositories according Logic to each entity
+. Make Services for Bussiness Logic to encapsulate away from controller
+. Apply CleanCode
+. Apply Solid Principles
+. Apply Security of Sensitive Data and on forms
+
+

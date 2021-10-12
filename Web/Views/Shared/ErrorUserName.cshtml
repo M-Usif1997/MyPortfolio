@@ -1,0 +1,24 @@
+﻿@model string 
+@{ Layout = null; }
+
+
+<link href="~/css/freelancer.css" rel="stylesheet">
+
+<div class="alert alert-danger mt-1 mb-1">
+
+    <h4> 404 User Not Found :</h4>
+    <hr/>
+
+    <h5>
+
+        Owner of Porfolio with Username = " @Model "  Cannot Be Found
+
+    </h5>
+</div>
+
+
+<a asp-controller="Account" asp-action="Login" class="btn btn-outline-success" style="width:auto">
+
+    Click Here to login To Your Portfolio
+
+</a>

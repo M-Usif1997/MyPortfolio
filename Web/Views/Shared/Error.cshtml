@@ -1,0 +1,16 @@
+﻿
+@{ Layout = null; }
+
+<link href="~/css/freelancer.css" rel="stylesheet">
+
+@if (ViewBag.ErrorTitle == null)
+{
+<h3>
+    An occured while processing your request.
+    The support team is notified and we are working on the fix
+</h3>
+                <h5>Please contact us on m.yosef.1997@gmail.com</h5> }
+                            else
+                            {
+                <h1 class="text-danger text-center">@ViewBag.ErrorTitle</h1>
+                                <h3 class="text-danger text-center">@ViewBag.ErrorMessage</h3>}

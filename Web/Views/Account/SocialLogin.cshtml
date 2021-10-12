@@ -1,0 +1,61 @@
+﻿@model Web.ViewModels.SocialLoginViewModel
+
+@{
+    Layout = null;
+}
+<link href="~/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SocialLogins</title>
+</head>
+<body>
+
+    <h2 class="m-2 p-3">Login by Continue Your Data</h2>
+    <hr />
+    <div class="row">
+        <div class="m-3 col-md-4">
+            <form method="post" asp-action="SocialLogin">
+                <div asp-validation-summary="All" class="text-danger"></div>
+
+                <input asp-for="Email" type="hidden" />
+                <input asp-for="FirstName" type="hidden" />
+                <input asp-for="LastName" type="hidden" />
+
+                <div class="form-group">
+                    <label asp-for="UserName" class="control-label m-2 "></label>
+                    <input asp-for="UserName" class="form-control" placeholder="Username" />
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="City" class="control-label m-2"></label>
+                    <input asp-for="City" class="form-control" placeholder="City" />
+                    <span asp-validation-for="City" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Profile" class="control-label m-2"></label>
+                    <input asp-for="Profile" class="form-control" placeholder="Job Description" />
+                    <span asp-validation-for="Profile" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-outline-primary m-2" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="m-2">
+        <a asp-action="Login" class="link-info">Back to Login Page</a>
+    </div>
+</body>
+</html>
+
+
+
+
+
+<script src="~/lib/jquery/jquery.min.js"></script>
+<script src="~/lib/jquery-validate/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
